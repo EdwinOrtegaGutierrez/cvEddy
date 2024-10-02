@@ -1,0 +1,49 @@
+.card { 
+    background-color: #7ed1f815;
+    width: 20rem;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    flex: 1 1 300px; /* Asegura que las cards tengan el mismo ancho */
+    min-height: 300px; /* Establece una altura mínima para todas las cards */
+    p {
+        font-size: 1.3rem;
+        margin: 10px 0 4px 0;
+        color: #fff;
+    }
+    span {
+        color: gray;
+    }
+    ul {
+        list-style: none;
+        padding: 10px 0 0 0;
+        line-height: 1.6;
+    }
+    li {
+        color: #fff;
+        font-size: 1.02rem;
+    }
+    img {
+        width: 320px;
+        height: 320px;
+        border-radius: 10px;
+
+    }
+
+    .link{
+        height: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .button{
+            background-color: #97F294;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 25px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.footer{
+    background-color: #333;
+    height: max-content;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    .location, .contacts, .phone, .mail{
+        display: flex;
+        gap: 10px;
+        padding: 10px 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bi{
+        font-size: 24px;
+        color: #fff;
+        &:hover{
+            color: var(--cyan);
+        }
+    }
+
+    p{
+        color: aliceblue;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}

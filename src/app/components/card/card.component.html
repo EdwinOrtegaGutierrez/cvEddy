@@ -1,0 +1,20 @@
+<div class="card">
+    @if(itemCard.image){
+        <img src="{{itemCard.image}}" alt="{{itemCard.image}} image">
+    }
+    <h3>{{itemCard.title}}</h3>
+    <p>{{itemCard.subtitle}}</p>
+    <span>{{itemCard.date }}</span>
+    @if(itemCard.data) {
+        <ul>
+            @for (data of itemCard.data; track $index) {
+                <li><i class="bi bi-dot"></i> {{data}}</li>
+            }
+        </ul>
+    }
+    @if(itemCard.link){
+        <div class="link">
+            <a href="{{itemCard.link}}" class="button">Verified</a>
+        </div>
+    }
+</div>

@@ -1,0 +1,32 @@
+<section class="section">
+    <div class="head">
+        <i class="bi {{icon}}"></i>
+        <h2>{{title}}</h2>
+    </div>
+    
+    @if(text) {
+        <div class="info">
+            <p>{{text}}</p>
+        </div>
+    }
+    @if (images){
+        <div class="images">
+            
+            @for (image of images; track $index) {
+                <img src="{{image}}" alt="{{image}} - {{$index}}">
+            }
+        </div>
+    }
+    
+    <div class="cards">
+        @for (item of listCard; track $index) { 
+            <app-card [itemCard]="item"/>
+        }
+    </div>
+
+    <div class="widgets">
+        @for (widget of widgets; track $index) {
+            <app-widget [widget]="widget"/>
+        }
+    </div>
+</section>

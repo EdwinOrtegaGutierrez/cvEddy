@@ -1,0 +1,67 @@
+<main class="container">
+    <head-container/>
+
+    <div class="box">
+
+        <div class="box">
+            <app-description
+                icon="bi-person"
+                title="About Me"
+                text="I am a Computer Science Engineer passionate about sustainable technological development and creating scalable solutions. Throughout my career, I have worked on various projects, ranging from AI based applications to implementing robust backend infrastructures with microservices and REST APIs. My experience spans from collaborating with large corporations like IBM to developing innovative projects in robotics and computer vision. With skills in programming languages such as Python, C#, and frameworks like Angular and React, I specialize in building efficient and optimized systems for diverse industries. Additionally, I have a strong interest in musical composition and technology applied to music."
+                [images]="aboutMeImages"
+            />
+            <!-- educacion -->
+            <!-- card -->
+            <app-description
+                icon="bi-mortarboard"
+                title="Education"
+                [listCard]="education" 
+            />
+        </div>
+        <!-- experiencia laboral -->
+            <!-- cards -->
+        <app-description
+            icon="bi-briefcase"
+            title="Work Experiences"
+            [listCard]="workExperiences"
+        />
+        
+        <!-- badges -->
+            <!-- cards -->
+        <app-description
+            icon="bi-award"
+            title="Badges"
+            [listCard]="badges"
+        />
+        <div class="box">
+
+            <!-- badges -->
+                <!-- cards -->
+            <app-description
+                icon="bi-folder"
+                title="Projects"
+                [listCard]="projects"
+            />
+            <div class="box">
+                <!-- habilidades -->
+                    <!-- widgets -->
+                <app-description
+                    icon="bi-code-slash"
+                    title="Skills"
+                    [widgets]="widgets"
+                />
+                <!-- idiomas -->
+                    <!-- widgets -->
+                <app-description
+                    icon="bi-translate"
+                    title="Languages"
+                    [widgets]="languages"
+                />
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- footer -->
+    <footer-container/>
+</main>

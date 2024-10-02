@@ -1,0 +1,73 @@
+i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-dark);
+    border-radius:50%;
+    width: 55px;
+    height: 55px;
+}
+
+.bi-person, .bi-briefcase, .bi-mortarboard, .bi-code-slash, .bi-translate, .bi-award, .bi-folder {
+    font-size: 2.2rem;
+    color: var(--blue-light);
+}
+.section {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 50rem; /* Limita el ancho máximo a 50rem */
+    min-width: 20rem; /* Evita que sea demasiado pequeño */
+}
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.widgets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.info {
+    background-color:  #7ed1f815; /* Fondo blanco para el texto */
+    border-radius: 10px;
+    padding: 1.5rem; /* Espaciado interno */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.info p {
+    line-height: 1.6;
+    font-weight: 100;
+    color: #fff; /* Color del texto */
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 0 0;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+.images img {
+    width: 15rem;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s ease; /* Transición suave para efectos */
+}
+
+.images img:hover {
+    transform: scale(1.05); /* Efecto de hover */
+}

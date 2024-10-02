@@ -1,0 +1,12 @@
+.container {
+    width: 99.2vw;
+    background-color: #121213;
+}
+
+.box {
+    padding: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Permite que los divs se acomoden automáticamente */
+    justify-content: center;
+}

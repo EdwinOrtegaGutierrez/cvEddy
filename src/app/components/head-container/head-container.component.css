@@ -1,0 +1,36 @@
+.header{
+    background-image: url('/images/header.jpg');
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    color: aliceblue;
+    border-radius: 0 0 50px 50px;
+    text-align: center;
+    .body{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        border-radius: 0 0 50px 50px;
+        gap: 10px;
+        background-color: #08080848;    
+    }
+    &:hover{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .image{
+        background-color: rgba(240, 248, 255, 0.233);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid aliceblue;
+        width: 10rem;
+        height: 10rem;
+        img{
+            border-radius: 50%;
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+}

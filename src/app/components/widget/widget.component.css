@@ -1,0 +1,15 @@
+.widget{
+    background-color: #F2B749;
+    width:fit-content;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-radius: 15px;
+    img{
+        width: 30px;
+    }
+    span{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
